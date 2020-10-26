@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:watcherapp/pages/welcome/welcome.dart';
+import 'package:watcherapp/routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,11 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: staticRoutes,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: WelcomePage(),
     );
   }

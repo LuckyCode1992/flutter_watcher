@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 import 'package:watcherapp/common/utils/app_utils.dart';
 import 'package:watcherapp/common/values/app_values.dart';
+import 'package:watcherapp/routes.dart';
 
 class WelcomePage extends StatefulWidget {
   @override
@@ -90,7 +91,9 @@ class _WelcomePageState extends State<WelcomePage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(5.0)),
         ),
-        onPressed: (){},
+        onPressed: (){
+          Navigator.pushNamed(context, AppRoutes.SIGN_IN);
+        },
       ),
     );
   }
