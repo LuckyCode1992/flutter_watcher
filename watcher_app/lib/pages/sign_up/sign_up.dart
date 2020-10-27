@@ -10,7 +10,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text('SignInPage'),
+        child: Text('SignUpPage'),
       ),
     );
   }
