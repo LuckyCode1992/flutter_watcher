@@ -11,3 +11,4 @@ bool duCheckStringLength(String input, int length) {
   if (input == null || input.isEmpty) return false;
   return input.length >= length;
 }
+
